@@ -1,0 +1,103 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'MuseoSans500', 'Lucida Grande', 'Helvetica', 'Arial';
+	overflow: hidden;
+	text-align: center;
+}
+
+#loading, #error {
+	margin-top: 160px;
+	font-size: 36px;
+	font-weight: bold;
+	color: #bcbebe;
+	text-shadow: #fff 0 2px 0;
+}
+
+#container {
+	text-align: center;
+}
+
+#stats {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+dl {
+	margin: 0 4px;
+	padding: 3px;
+	float: left;
+	width: 123px;
+	text-align: center;
+}
+
+dt {
+	margin: 0;
+	padding: 0;
+}
+
+dd {
+	color: #1C67AC;
+	padding: 0 0 0 20px;
+	margin: 0;
+	line-height: 26px;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline;
+}
+
+#rank {
+	background: url(../images/globe.png) no-repeat 0 50%;
+}
+
+#rankDelta {
+	background: url(../images/down.png) no-repeat 0 50%;
+}
+
+#linksIn {
+	background: url(../images/link.png) no-repeat 0 50%;
+}
+
+#graph {
+	padding: 3px;
+	margin: -10px 0 0 0;
+	background: #fff;
+	border: 1px solid #D5D1C2;
+	border-radius: 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+	border: 0px solid;
+	border-color: #E5E5E5 #DBDBDB #D2D2D2;
+}
+
+#more {
+	margin: 0 auto;
+	text-decoration: none;
+	border-radius: 4px;
+	color: white;
+	display: block;
+	padding: 6px 12px;
+	text-shadow: 0 -1px 0 #074898;
+	width: 212px;
+	background: -webkit-linear-gradient(top, #329DE9 0%,#074898 100%);
+	background: linear-gradient(top, #329DE9 0%,#074898 100%);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+
+#more:hover {
+	background: -webkit-linear-gradient(top, #42aeee 0%,#064d9e 100%);
+	background: linear-gradient(top, #42aeee 0%,#064d9e 100%);
+}
+
+#more:active {
+	-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+	font-family: 'MuseoSans500';
+	src: url('type/museosans_500-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

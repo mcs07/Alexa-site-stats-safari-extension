@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Alexa Site Stats</title>
+	<link rel="stylesheet" href="css/popup.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+	<div id="loading">
+		<img src="images/spinner.gif">
+	</div>
+	<div id="error">
+		No data available
+	</div>
+	<div id="container">
+		<div id="stats">
+			<dl>
+				<dd id="rank"></dd>
+				<dt>Global Rank</dt>
+			</dl>
+			<dl>
+				<dd id="rankDelta"></dd>
+				<dt>Change</dt>
+			</dl>
+			<dl>
+				<dd id="linksIn"></dd>
+				<dt>Links in</dt>
+			</dl>
+		</div>
+		<p>
+			<img id="graph" src="%graphSrc%">
+		</p>
+		<p>
+			<a id="more" href="%linkSrc%">Read more on Alexa</a>
+		</p>
+	</div>
+</body>
+</html>
