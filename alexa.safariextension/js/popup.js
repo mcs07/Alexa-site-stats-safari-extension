@@ -35,8 +35,9 @@ function openPopup(event) {
 			$('#rankDelta').text(rankDelta);
 			$('#linksIn').text(linksIn);
 			$('#graph').attr('src', 'http://traffic.alexa.com/graph?&w=400&h=220&o=f&c=1&y=r&b=ffffff&n=666666&r=2y&u='+url);
+			$('#more').attr('href', openUrl);
 			$('#more').unbind('click');
-			$('#more').click(function() {
+			$('#more').click(function(e) {
 				switch (ext.settings.resultsType) {
 				case 'foreground':
 					app.activeBrowserWindow.openTab('foreground').url = openUrl;
@@ -52,6 +53,7 @@ function openPopup(event) {
 					app.activeBrowserWindow.activeTab.url = openUrl;
 					break;
 				}
+				e.preventDefault();
 			});
 			
 			$('#loading').fadeOut(600, function() {
